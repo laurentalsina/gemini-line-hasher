@@ -18,7 +18,7 @@ Gemini CLI extension to improve the success rate of source-code changes. Saves t
        REPLACE FROM `9°4s2|` TO `11°s53|` WITH:
        `[New code without prefixes or pipes]`
    ### Do not use shell tools like grep and cat
-   Use read_file so the line-hasher extension can provide the anchors you need to fix the brace alignment
+   Use read_file so the line-hasher extension can provide the anchors you need to modify files reliably.
 
 - Once installed use the CLI as normal and notice the higher success rate of its code edit attempts.
 
