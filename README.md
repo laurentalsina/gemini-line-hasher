@@ -11,8 +11,6 @@ Gemini CLI extension to improve the success rate of source-code changes. Saves t
 
 - Add this to your GEMINI.md:
 
-- Once installed use the CLI as normal and notice the higher success rate of its code edit attempts.
-
    ### Code Editing Protocol
    We use an advanced **Code Anchoring** protocol. All lines follow: `[Line]°[Hash]|[Code]`
    *   **Separator:** The `|` character. Left is the anchor; right is the source code.
@@ -21,6 +19,8 @@ Gemini CLI extension to improve the success rate of source-code changes. Saves t
        `[New code without prefixes or pipes]`
    ### Do not use shell tools like grep and cat
    Use read_file so the line-hasher extension can provide the anchors you need to fix the brace alignment
+
+- Once installed use the CLI as normal and notice the higher success rate of its code edit attempts.
 
 ## Installation
 
