@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "BeforeTool": [
+      {
+        "matcher": "read_file",
+        "hooks": [
+          {
+            "name": "intercept-and-hash",
+            "type": "command",
+            "command": "node ${extensionPath}/hasher.js"
+          }
+        ]
+      },
+      {
+        "matcher": "write_file|replace|edit",
+        "hooks": [
+          {
+            "name": "remove-line-hashes",
+            "type": "command",
+            "command": "node ${extensionPath}/cleaner.js"
+          }
+        ]
+      }
+    ]
+  }
+}
