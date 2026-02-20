@@ -1,4 +1,4 @@
-# LINE-HASHER MCP Server
+# GEMINI-LINE-HASHER
 
 Gemini CLI extension to improve the success rate of source-code changes. Saves time and tokens.
 
