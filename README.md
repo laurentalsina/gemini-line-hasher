@@ -4,8 +4,8 @@ Gemini CLI extension to improve the success rate of source-code changes. Saves t
 
 ## Description
 
-- on read files, add °abc hashes at the start of each line
-- on write files, use the hashes as markers to identify the line precisely, then remove the hashes 
+- on read-file calls, adds <line-nr>°<content-hash> at the start of each line
+- on write-file calls, uses the hashes as markers to identify lines precisely, then remove the hashes 
 
 ## Usage
 
@@ -25,12 +25,15 @@ Gemini CLI extension to improve the success rate of source-code changes. Saves t
 ## Installation
 
 Simplest is to activate the extension by linking the local version so changes take effect
+
    gemini extensions link <path-to>/gemini-line-hasher
 
 List extensions
+
    gemini extensions list (shows ID and status)
 
 Enable
+
    gemini extensions enable gemini-line-hasher
 
 Hooks are loaded at the start of a session, restart the CLI for changes to take effect.
